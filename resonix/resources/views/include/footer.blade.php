@@ -10,9 +10,7 @@
         <svg  width="2" height="332" viewBox="0 0 2 332" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1V331" stroke="white" stroke-width="2" stroke-linecap="round"/>
         </svg>
-
         </div>
-
         <div class="w-full md:w-1/2 lg:w-4/6 px-4 lg:px-10  sm:mt-5 lg:mt-0 lg:mx-4 text-center  ">
           <h5 class="uppercase tracking-wider font-bold text-white">FOLLOW US ON ALL SOCIAL HANDLES FOR MORE INSIGHTS</h5>
           <br>

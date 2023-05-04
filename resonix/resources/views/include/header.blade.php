@@ -79,6 +79,13 @@
                         </li>
                         <li class="md:ml-4">
                             <a
+                                class="py-2 inline-block md:text-white md:hidden lg:block font-semibold hover:underline"
+                                href="/blog"
+                                >Blog</a
+                            >
+                        </li>
+                        <li class="md:ml-4">
+                            <a
                                 class="py-2 inline-block md:text-white md:px-2 font-semibold hover:underline"
                                 href="/services"
                                 >Services</a
@@ -96,6 +103,13 @@
                                 class="inline-block font-semibold px-2 py-2 text-white bg-green-400 md:bg-transparent md:text-white border-gray-700 rounded hover:bg-white hover:text-blue-700 hover:border-red-600"
                                 href="/contact"
                                 >Contact Us</a
+                            >
+                        </li>
+                        <li class="md:ml-4 mt-3 md:mt-0">
+                            <a
+                                class="inline-block font-semibold px-2 py-2 text-white bg-green-400 md:bg-transparent md:text-white border-gray-700 rounded hover:bg-white hover:text-blue-700 hover:border-red-600"
+                                href="/contact"
+                                >Login</a
                             >
                         </li>
                     </ul>
