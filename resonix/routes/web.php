@@ -25,8 +25,12 @@ Route::get('/expertise', function () {
 Route::get('/service', function () {
     return view('service');
 });
-Route::view('/conctact', "contact");
+
 
 Route::get('/blog', function () {
     return view('blog.blog');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
 });
