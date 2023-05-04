@@ -38,6 +38,7 @@
       <!-- <div class="font-bold text-6xl pb-5 text-center">About Us <br><br></div> -->
       <div class="flex flex-col lg:flex-row">
         <div class="w-full justify-center left-5 md:w-1/3 lg:w-4/12 mt-2 lg:mt-0 lg:mx-1 text-center  ">
+            {{--  --}}
          <img src="{{url('../client/images/rasonix-Illustrator.svg')}}"/>
           </div>
           <div class=" justify-center text-3xl pt-6 px-3 sm:px-4 md:px-8 lg:px-12 xl:px-16 font-semibold text-justify md:w-2/3 lg:w-8/12 lg:pr-4">
