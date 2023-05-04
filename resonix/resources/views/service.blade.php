@@ -56,6 +56,7 @@
               <div class=" justify-center text-3xl pt-6 px-3 sm:px-4 md:px-8 lg:px-12 xl:px-16 text-justify font-semibold text-left md:w-1/2 lg:w-8/12 lg:pr-4">
               <span>Our team has extensive experience building high-quality Android apps that meet the needs of our clients. We use the latest tools and technologies to ensure that our apps are reliable, user-friendly, and perform well on a variety of devices. We can help you build an Android app from scratch, or we can work with you to improve an existing app. We have experience building a wide range of Android apps, including business apps, productivity apps, games, and more.</span>
               </div>
+              
           </div>
         </div>
         <!-- </div>
@@ -5067,7 +5068,7 @@
   background-position: center;
   background-size: cover;
 }
-  
+  /* style should always add into layout */
 </style>
     </x-slot>
 </x-layout>
