@@ -25,16 +25,16 @@
     @include('layouts.inc.admin-navbar')
     <div id="layoutSidenav">
         @include('layouts.inc.admin-sidebar')
-
-        <div class="layoutSidenav_content">
+        <div id="layoutSidenav_content">
             <main>
                 @yield('content')
             </main>
-           
+            @include('layouts.inc.admin-footer')
         </div>
-        
     </div>
-    @include('layouts.inc.admin-footer')
+
+
+
     <script src="{{ asset('client/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('client/js/script.js') }}"></script>
 </body>
