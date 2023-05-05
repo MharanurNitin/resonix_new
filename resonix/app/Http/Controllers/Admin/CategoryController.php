@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\CategoryFormRequest;
 use Illuminate\Http\Request;
@@ -46,5 +48,57 @@ class CategoryController extends Controller
         $category->created_by = Auth::User()->id;
         $category->save();
         return redirect('admin/category')->with('message', 'Category added successfully');
+    }
+
+    public function edit($category_id)
+    {
+        $category = Category::find($category_id);
+        return view('admin.category.edit',compact('category'));
+    }
+
+    public function update(CategoryFormRequest $request,$category_id)
+    {
+        $data = $request->validated();
+        $category = Category::find($category_id);
+        $category->name = $data['name'];
+        $category->slug = $data['slug'];
+        $category->description = $data['description'];
+        if ($request->hasfile('image')) {
+            $destination = 'uploads/category/'.$category->image;
+            if(File::exists($destination)){
+                File::delete($destination);
+            }
+            $file = $request->file('image');
+            $filename = rand() . '.' . $file->getClientOriginalExtension();
+            $file->move('uploads/category/', $filename);
+            $category->image = $filename;
+        }
+        $category->description = $data['description'];
+        $category->meta_title = $data['meta_title'];
+        $category->meta_description = $data['meta_description'];
+        $category->meta_keyword = $data['meta_keyword'];
+        $category->navbar_status = $request->navbar_status == true ? '1' : '0';
+        $category->status = $request->status == true ? '1' : '0';
+        $category->created_by = Auth::User()->id;
+        $category->update();
+        return redirect('admin/category')->with('message', 'Category Updated successfully');
+    }
+
+    public function destroy($category_id)
+    {
+        $category = Category::find($category_id);
+        if($category)
+        {   
+            $destination = 'uploads/category/'.$category->image;
+            if(File::exists($destination)){
+                File::delete($destination);
+            } 
+            $category->delete();
+            return redirect('admin/category')->with('message', 'Category Deleted successfully');
+        }
+        else
+        {
+            return redirect('admin/category')->with('message', 'No Category Id Found');
+        }
     }
 }
