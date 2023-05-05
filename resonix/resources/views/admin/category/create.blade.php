@@ -65,16 +65,10 @@
                         <label for="">Status</label>
                         <input type="checkbox" name='status'>
                     </div>
-                    <div class="col-md-6">
-<<<<<<< HEAD
-                    </div>
+                   
                         <button type="submit" class="btn btn-lg btn-primary">Add Category</button>
-
-=======
                         
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg ">Add Category</button>
->>>>>>> af82efd6414b7349928042f8b5c9af0b423a0ddc
                 </div>
                 
             </form>
