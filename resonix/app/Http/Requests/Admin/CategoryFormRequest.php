@@ -19,29 +19,51 @@ class CategoryFormRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
      */
+
     public function rules(): array
     {
         $rules = [
             'name' => [
                 'required',
                 'string',
-               ' max:200'
+                ' max:200'
             ],
             'slug' => [
                 'required',
                 'string',
-               ' max:200'
+                ' max:200'
             ],
-            'description'=>[
+            'description' => [
                 'required',
             ],
             'image' => [
-                'required',
-                'image'
+                'nullable',
+                'mimes:jpeg,jpg,png',
+
             ],
-            
+            'meta_title' => [
+                'required',
+                'string',
+                'max:200'
+            ],
+            'meta_description' => [
+                'required',
+                'string'
+            ],
+            'meta_keyword' => [
+                'required',
+                'string'
+            ],
+            'navbar_status' => [
+                'nullable',
+                'boolean'
+            ],
+            'status' => [
+                'nullable',
+                'boolean',
+            ]
 
         ];
-        return $rules ;
+        return $rules;
     }
 }

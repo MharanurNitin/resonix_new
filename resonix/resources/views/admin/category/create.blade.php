@@ -9,7 +9,14 @@
             <h4 class=""> Add Category</h4>
         </div>
         <div class="card-body">
-            <form action="{{url('admin/add-category')}}" method="POST">
+        @if($errors->any())
+        <div class="alert alert-danger">
+            @foreach($errors->all() as $error)
+             <div>{{$error}}</div>
+            @endforeach
+        </div>
+        @endif
+            <form action="{{url('admin/add-category')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     <label for="">Category Name</label>
@@ -59,8 +66,9 @@
                         <input type="checkbox" name='status'>
                     </div>
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-primary">Add Category</button>
                     </div>
+                        <button type="submit" class="btn btn-lg btn-primary">Add Category</button>
+
                 </div>
             </form>
         </div>
