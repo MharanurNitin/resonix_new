@@ -35,8 +35,8 @@
 
 
 
-    <script src="{{ asset('client/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('client/js/script.js') }}"></script>
+    <script src="{{ asset('../client/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('../client/js/script.js') }}"></script>
 </body>
 
 </html>

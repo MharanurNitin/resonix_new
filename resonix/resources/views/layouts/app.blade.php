@@ -12,6 +12,12 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+  
+    
+    <!-- Styles -->
+    <link href="{{ asset('client/css/styles.css') }}" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -76,5 +82,7 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{asset('../client/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('../client/js/script.js')}}"></script>
 </body>
 </html>
