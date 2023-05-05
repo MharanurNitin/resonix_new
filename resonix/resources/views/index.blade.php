@@ -192,4 +192,4 @@
     } 
     </style>
     </x-slot>
-</x-layout>
+</x-layout> 
