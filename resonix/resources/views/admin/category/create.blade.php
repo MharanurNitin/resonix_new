@@ -59,9 +59,11 @@
                         <input type="checkbox" name='status'>
                     </div>
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-primary">Add Category</button>
+                        
                     </div>
+                    <button type="submit" class="btn btn-primary btn-lg ">Add Category</button>
                 </div>
+                
             </form>
         </div>
     </div>
