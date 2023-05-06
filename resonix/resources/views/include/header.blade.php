@@ -108,7 +108,7 @@
                         <li class="md:ml-4 mt-3 md:mt-0">
                             <a
                                 class="inline-block font-semibold px-2 py-2 text-white bg-green-400 md:bg-transparent md:text-white border-gray-700 rounded hover:bg-white hover:text-blue-700 hover:border-red-600"
-                                href="/contact"
+                                href="/login"
                                 >Login</a
                             >
                         </li>
