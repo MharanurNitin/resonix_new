@@ -1,10 +1,11 @@
-<x-layout >
+{{-- <x-layout >
     <x-slot name='title'>
         Welcome to blog
     </x-slot>
     <x-slot name='content'>
 
 <div class="bg-light">
+   
     <div class="relative isolate px-6 pt-14 lg:px-8">
       <marquee beheviour='alternate' scrollAmount='10'><h5 class='text-red-500'>1.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam iste dolore error blanditiis quo eius, quos illum commodi suscipit quas, deleniti</h5></marquee>
         <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -44,4 +45,10 @@
 </x-layout>
 
 
-
+ --}}
+{{-- @include('include.header') --}}
+@extends('layouts.app')
+@section('content')
+{{-- @include('include.header') --}}
+    <h1>Hello Blog</h1>
+@endsection

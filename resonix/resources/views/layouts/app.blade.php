@@ -16,6 +16,8 @@
     
     <!-- Styles -->
     <link href="{{ asset('client/css/styles.css') }}" rel="stylesheet" />
+    <link href="{{ asset('client/css/index.css') }}" rel="stylesheet" />
+    
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
 
@@ -24,7 +26,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -76,7 +78,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
         <main class="py-4">
             @yield('content')
@@ -84,5 +86,6 @@
     </div>
     <script src="{{asset('../client/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('../client/js/script.js')}}"></script>
+    <script src="{{asset('../client/js/jquery-3.6.0.min.js')}}"></script>
 </body>
 </html>

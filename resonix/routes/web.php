@@ -27,9 +27,7 @@ Route::get('/services', function () {
 });
 
 
-Route::get('/blog', function () {
-    return view('blog.blog');
-});
+Route::get('/blog',[App\Http\Controllers\Blog\BlogController::class,'blog']);
 
 Route::get('/contact', function () {
     return view('contact');
