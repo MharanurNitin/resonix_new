@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="../client/css/index.css" />
+    <link rel="stylesheet" href="../client/css/custom.css" />
     <!-- Quicksand font -->
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     {{-- font awesome CDN links --}}
