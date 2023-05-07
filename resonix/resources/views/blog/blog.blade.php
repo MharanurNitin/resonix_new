@@ -39,7 +39,7 @@
         </div>
     </div>
 </div>
-      @include('blog.blog_post')
+      
     </x-slot>
 </x-layout>
 

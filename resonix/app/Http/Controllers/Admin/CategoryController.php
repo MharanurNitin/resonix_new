@@ -9,7 +9,10 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\CategoryFormRequest;
 use Illuminate\Http\Request;
+ // Create Slug In laravel
+ use Illuminate\Support\str;
 
+ 
 class CategoryController extends Controller
 {
     public function index()
@@ -29,7 +32,7 @@ class CategoryController extends Controller
         // return $data;
         $category = new Category;
         $category->name = $data['name'];
-        $category->slug = $data['slug'];
+        $category->slug =Str::slug($data['slug']);
         $category->description = $data['description'];
         if ($request->hasfile('image')) {
             $file = $request->file('image');
@@ -61,7 +64,7 @@ class CategoryController extends Controller
         $data = $request->validated();
         $category = Category::find($category_id);
         $category->name = $data['name'];
-        $category->slug = $data['slug'];
+        $category->slug = Str::slug($data['slug']);
         $category->description = $data['description'];
         if ($request->hasfile('image')) {
             $destination = 'uploads/category/'.$category->image;
