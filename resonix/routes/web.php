@@ -28,6 +28,7 @@ Route::get('/services', function () {
 
 
 Route::get('/blog',[App\Http\Controllers\Blog\BlogController::class,'blog']);
+Route::get('/blog/{category_slug}',[App\Http\Controllers\Blog\BlogController::class,'viewCategoryPost']);
 
 Route::get('/contact', function () {
     return view('contact');
