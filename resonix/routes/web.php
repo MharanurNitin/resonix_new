@@ -25,14 +25,15 @@ Route::get('/expertise', function () {
 Route::get('/services', function () {
     return view('services');
 });
-
-
-Route::get('/blog',[App\Http\Controllers\Blog\BlogController::class,'blog']);
-Route::get('/blog/{category_slug}',[App\Http\Controllers\Blog\BlogController::class,'viewCategoryPost']);
-
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/blog',[App\Http\Controllers\Blog\BlogController::class,'blog']);
+Route::get('/blog/{category_slug}',[App\Http\Controllers\Blog\BlogController::class,'viewCategoryPost']);
+Route::get('/blog/{category_slug}/{post_slug}',[App\Http\Controllers\Blog\BlogController::class,'viewPost']);
+
+
 
 
 

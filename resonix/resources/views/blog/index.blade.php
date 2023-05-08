@@ -1,7 +1,11 @@
 <x-layout >
     <x-slot name='title'>
-        Welcome to blog
+       {{$category->meta_title}}
+       @section('meta_description',"$category->meta_description")
+       @section('meta_keyword',"$category->meta_keyword") 
     </x-slot>
+     
+    
     <x-slot name='content'>
         <div class="min-h-4/5 w-screen">
      @include('include.blog-navbar')
@@ -23,6 +27,12 @@
                         <h6 class="">Posted On : {{$postitem->created_at->format('d-m-Y')}}</h6>
                         <h6>Posted By : {{$postitem->user->name}}</h6>
                         </div>
+
+                        
+
+                    </div>
+                    <div class="your-paginate">
+                        {{$post->links()}}
                     </div>
                     @empty
                     <div class="card card-shadow mt-4">
@@ -36,7 +46,7 @@
                 <div class="w-11/12 md:w-1/5 bg-white shadow-lg text-center mt-3 md:mt-0">
                     <div class="card-body ">
 
-                        <h4> ADVT Section</h4>
+                        <h4>  Section</h4>
                     </div>
                 </div>
             </div>

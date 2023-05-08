@@ -12,7 +12,7 @@
         <div class="ml-3 md:w-auto">
             <a href="/">
                 <img
-                    src="../client/images/logo.png"
+                    src="/client/images/logo.png"
                     alt="Rasonix"
                     class="w-40 h-10"
                 />

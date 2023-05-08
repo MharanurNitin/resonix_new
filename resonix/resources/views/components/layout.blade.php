@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
     <title>{{$title}}</title>
+    <meta name='description' content="@yield('meta_description')">
+    <meta name='keyword' content="@yield('meta_keyword')">
     
 </head>
 <body >
