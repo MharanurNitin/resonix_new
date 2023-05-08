@@ -1,5 +1,6 @@
 <x-layout>
     <x-slot name="title">Rasonix</x-slot>
+   
     <x-slot name="content">
         <main class="w-full">
     <!-- start of Hero -->
@@ -25,6 +26,11 @@
         </div>
       </section>
     </div>
+    {{-- <div class="home-hero-section flex justify-center items-center">
+    <h3 class="text-white text-5xl">
+      Transform your business online with us!!
+    </h3>
+    </div> --}}
 
     <!-- start of About -->
     <br>
@@ -190,6 +196,18 @@
     border-top-right-radius: 6em;
     letter-spacing: 0.15pc;
     } 
+     /* <style> */
+      .home-hero-section{
+        background-image: url('../client/images/header-bg.jpg');
+        width:100%;
+        /* height:150px; */
+        box-sizing:border-box;
+        padding:2rem;
+        background-size:cover;
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+    /* </style> */
     </style>
     </x-slot>
 </x-layout> 

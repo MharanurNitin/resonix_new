@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot name="title">Rasonix</x-slot>
     <x-slot name="content">
-         <main class="w-full">
+         {{-- <main class="w-full">
 
     <!-- start header -->
     <!-- Using the Component named header for the same logo and navbar throughout the webapp -->
@@ -11,7 +11,7 @@
      <div class="relative invisible overflow-hidden h-1/6 lg:screen w-full lg:mb-16">
       <!-- Dark overlay -->
       <div
-        class="absolute top-0 bottom-0 left-0 right-0 bg-clip bg-gradient-to-br from-blue-400 via-black to-green-300 opacity-50">
+        class="absolute top-0 bottom-0 left-0 right-0 bg-clip bg-gradient-to-br from-blue-400 via-red to-green-300 opacity-50">
 
       </div>
       <!-- Header text -->
@@ -38,7 +38,7 @@
       <!-- <div class="font-bold text-6xl pb-5 text-center">About Us <br><br></div> -->
       <div class="flex flex-col lg:flex-row">
         <div class="w-full justify-center left-5 md:w-1/3 lg:w-4/12 mt-2 lg:mt-0 lg:mx-1 text-center  ">
-            {{--  --}}
+            
          <img src="{{url('../client/images/rasonix-Illustrator.svg')}}"/>
           </div>
           <div class=" justify-center text-3xl pt-6 px-3 sm:px-4 md:px-8 lg:px-12 xl:px-16 font-semibold text-justify md:w-2/3 lg:w-8/12 lg:pr-4">
@@ -50,7 +50,7 @@
 
     
     <!-- start footer -->
-    {{-- @include('layouts.footer') --}}
+   
     <!-- end footer -->
 
   </main>
@@ -59,7 +59,22 @@
     border-top-left-radius: 10em;
     border-bottom-right-radius: 10em ;
   }
-</style>
+</style> --}}
+<h1 class="visible md:hidden text-center text-5xl">ABOUT US</h1>
+<main class="flex flex-col pb-4 md:flex-row w-screen min-h-[70vh] md:pt-7 items-center overflow-hidden border-box bg-pink-100">
+  <div class="left-container w-full md:w-1/2 order-2 md:order-0">
+    <h1 class="text-7xl hidden md:block p-4">About Us</h1>
+    <p class="p-4">Welcome to <span class="text-lg text-yellow-500 font-bold">Rasonix!</span> We are a part of <span class="text-md font-bold">Khus Online Solutions Private Limited </span>we are dedicated to developing innovative solutions for our clients. Our team is composed of experienced professionals who are passionate about using technology to solve complex problems. We believe in building long-term relationships with our clients and delivering top-quality products that exceed their expectations. Our goal is to help businesses of all sizes streamline their operations and grow through the use of cutting-edge software. We are excited to work with you and help your company reach new heights of success.</p>
+    <div class="flex justify-center">
+    <button class="bg-gradient-to-r from-fuchsia-500 to-cyan-500 p-2 rounded text-white">connect us</button>
+    </div>
+  </div>
+  <div class="right-container w-full md:w-1/2 flex justify-center md:order-4">
+    <img src="{{url('../client/images/rasonix-Illustrator.svg')}}" class="w-4/5 h-4/5" alt="">
+  </div>
+  
+
+</main>
 
     </x-slot>
 

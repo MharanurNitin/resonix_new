@@ -1,11 +1,12 @@
 <!-- start header -->
+{{-- linear-gradient(to right, rgb(251, 113, 133), rgb(217, 70, 239), rgb(99, 102, 241)) --}}
 <header
-    class="sticky top-0 left-0 w-full mr-2 z-50 px-0 overflow-visible shadow-sm sm:px-0 lg:px-0 xl:px-0 2xl:px-0 bg-black text-justify quicksand"
+    class="sticky border-b-slate-50 border-b-2 top-0 left-0 w-full  z-50 px-0 overflow-hidden shadow-sm sm:px-0 lg:px-0 xl:px-0 2xl:px-0 bg-gradient-to-r from-blue-600 to-violet-600 text-justify"
 >
     <!--left--10 w-full z-50 px-0.5 sm:px-2 lg:px-02 xl:px-10 2xl:px-20-->
 
     <div
-        class="flex flex-wrap items-center justify-between py-2 px-4 l overflow-visible bg-gradient-to-br from-blue-700 to-red-600"
+        class="flex flex-wrap items-center justify-between py-2 px-4 l overflow-visible "
     >
         <!-- <section class="cover relative bg-gradient-to-br from-blue-800 to-red-600 "> -->
         <div class="ml-3 md:w-auto">

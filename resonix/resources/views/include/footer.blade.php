@@ -1,5 +1,5 @@
-<footer class="relative corner-round-foot bg-gradient-to-br quicksand from-red-600 to-blue-700 text-white px-4 sm:px-4 lg:px-12 xl:px-32 2xl:px-56 pt-4 pb-11 md:pt-7 gap-10 z-50">
-      <div class="flex flex-col lg:flex-row mx-4 px-6 items-center">
+{{-- <footer class="relative z-30 corner-round-foot bg-gradient-to-br quicksand from-red-600 to-blue-700 text-white px-4 sm:px-4 lg:px-12 xl:px-32 2xl:px-56 pt-4 pb-11 md:pt-7 gap-10">
+      <div class="flex flex-col lg:flex-row mx-4 px-6 items-center">        
         <div class="foot-left justify-center md:w-1/2 lg:w-2/6 lg:pr-8 pl-4 mr-6 ml-2">
         <img src="../client/images/logo.png" alt="Rasonix" class="w-40 h-10 ">
         <br>
@@ -120,4 +120,24 @@
         height:240px;
         
     }
-</style>
+</style> --}}
+
+<footer class="bg-gradient-to-r from-fuchsia-500 to-pink-500">
+  <div class="top-div flex justify-center w-screen">
+    <div class="container max-w-[50%] text-center">
+      <h1 class="text-xl">Rasonix</h1>
+        <p>Rasonix (www.rasonix.com), Leader in Product Development and Independent Software Testing Services, is headquartered at Bengaluru, India.</p>
+   <div class='icons'>
+    <ul class="flex justify-center">
+      {{-- Facebook --}}
+      <li class="hover:scale-110"><a href=""><img src="{{url('../client/images/facebook.svg')}}"/></a></li>
+      <li><a href="" class="hover:scale-110"><img src="{{url('../client/images/facebook.svg')}}"/></a></li>
+      <li><a href="" class="hover:scale-110"><img src="{{url('../client/images/facebook.svg')}}"/></a></li>
+      <li><a href="" class="hover:scale-110"><img src="{{url('../client/images/facebook.svg')}}"/></a></li>
+      <li><a href="" class="hover:scale-110"><img src="{{url('../client/images/facebook.svg')}}"/></a></li>
+
+    </ul>
+   </div>
+    </div>
+  </div>
+</footer>
